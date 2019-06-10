@@ -7,7 +7,7 @@ NOTE: If used as a demonstration (in classroom/work), or in other projects, plea
 ****************************************************************************************************
 ****************************************************************************************************
 
-Here you will find basic Optimization Algorithms visualized using Processing.
+Here you will find basic Optimization Algorithms visualized using Processing.  
 Each program folder for each algorithm comes with:
 1.  ReadMe.txt file
 2.  An image example
