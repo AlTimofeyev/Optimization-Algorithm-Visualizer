@@ -2,8 +2,8 @@
 Visualized Basic Optimization Algorithms using Processing.
 
 Author:	Al Timofeyev
-Date:	June 9, 2019
-NOTE: If used as a demonstration (in classroom/work), or in other projects, please give credit.
+\nDate:	June 9, 2019
+\nNOTE: If used as a demonstration (in classroom/work), or in other projects, please give credit.
 ****************************************************************************************************
 ****************************************************************************************************
 
