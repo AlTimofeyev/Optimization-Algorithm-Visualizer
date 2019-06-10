@@ -1,8 +1,8 @@
 # Optimization-Visualized
 Visualized Basic Optimization Algorithms using Processing.
 
-** Author:	Al Timofeyev
-**Date:	June 9, 2019
+Author:	Al Timofeyev  
+Date:	June 9, 2019  
 NOTE: If used as a demonstration (in classroom/work), or in other projects, please give credit.
 ****************************************************************************************************
 ****************************************************************************************************
