@@ -53,23 +53,12 @@ class Particle
    *  A velocity vector is also initialized.
    */
   void iniParticle()
-  {
-    // Determine wether to spawn particles in top or bottom half of canvas.
-    boolean top = false;
-    if(goal.y > height/2)
-      top = true;
-    
+  {    
     // --------- Initialize The Particle Position ---------
     float rand1 = random(1);          // Get two random values between [0,1].
     float rand2 = random(1);
     float x = 0 + rand1*(width - 0);  // Normalize the x value to within the bounds.
-    float y = 0 + rand2*(height - 0);                          // Normalize the y value to within the bounds
-    /*
-    if(top)
-      y = 0 + rand2*(height/4 - 0);             // (top of canvas).
-    else
-      y = (height - height/4) + rand2*(height - (height - height/4)); // (bottom of canvas).
-    */
+    float y = 0 + rand2*(height - 0); // Normalize the y value to within the bounds
     position = new PVector(x, y);     // Set the initial position of particle.
     
     // ---------- Initialize The Velocity Vector ----------
