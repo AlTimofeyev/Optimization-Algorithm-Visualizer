@@ -24,47 +24,47 @@ int goalSize = 15;          // Size (width, height) of goal.
 // ********************************************************************************
 // ********************************************************************************
 
- void setup()
- {
-   size(800, 800);       // Size of the canvas is 800 by 800 (x, y).
-   goal = getNewGoal();  // Set a goal for the particle swarm.
-   
-   // Initialize the particle swarm.
-   swarm = new Population(populationSize, k, c1, c2);
- }
- 
- void draw()
- {
-   // Change goal and revive the population if more than 1/4 the population
-   // has reached the goal within 350 iterations.
-   if(frameCount > 350)
-   {
-     if(swarm.mostOfPopReachedGoal())
-     {
-       goal = getNewGoal();
-       swarm.revivePopulation();
-     }
-   }
-   
-   // Change goal if population hasn't reached the goal every 500 iterations.
-   if(frameCount%500 == 0)
-   {
-     if(!swarm.mostOfPopReachedGoal())
-     {
-       goal = getNewGoal();
-       swarm.revivePopulation();
-     }
-   }
-   
-   background(255);  // Set canvas background color.
-   
-   // Set the fill color and size of the goal.
-   fill(255, 0, 0);
-   ellipse(goal.x, goal.y, goalSize, goalSize);
-   
-   swarm.updatePopulation();  // Update the particle swarm population
-   swarm.show();              // Show it on the canvas.
- }
+void setup()
+{
+  size(800, 800);       // Size of the canvas is 800 by 800 (x, y).
+  goal = getNewGoal();  // Set a goal for the particle swarm.
+  
+  // Initialize the particle swarm.
+  swarm = new Population(populationSize, k, c1, c2);
+}
+
+void draw()
+{
+  // Change goal and revive the population if more than 1/4 the population
+  // has reached the goal within 350 iterations.
+  if(frameCount > 350)
+  {
+    if(swarm.mostOfPopReachedGoal())
+    {
+      goal = getNewGoal();
+      swarm.revivePopulation();
+    }
+  }
+  
+  // Change goal if population hasn't reached the goal every 500 iterations.
+  if(frameCount%500 == 0)
+  {
+    if(!swarm.mostOfPopReachedGoal())
+    {
+      goal = getNewGoal();
+      swarm.revivePopulation();
+    }
+  }
+  
+  background(255);  // Set canvas background color.
+  
+  // Set the fill color and size of the goal.
+  fill(255, 0, 0);
+  ellipse(goal.x, goal.y, goalSize, goalSize);
+  
+  swarm.updatePopulation();  // Update the particle swarm population
+  swarm.show();              // Show it on the canvas.
+}
  
  
  // ********************************************************************************

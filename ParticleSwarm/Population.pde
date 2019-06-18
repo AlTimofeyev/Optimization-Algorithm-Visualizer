@@ -50,7 +50,6 @@ class Population
     {
       particles[i].show();
     }
-    
   }
   
   /**
