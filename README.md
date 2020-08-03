@@ -1,4 +1,4 @@
-# Optimization-Visualized
+# Optimization-Algorithm-Visualizer
 Visualized Basic Optimization Algorithms using Processing.
 
 Author:	Al Timofeyev  
